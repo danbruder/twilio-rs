@@ -13,10 +13,6 @@ use std::collections::BTreeMap;
 use std::error::Error;
 use std::fmt::{self, Display, Formatter};
 
-#[cfg(feature = "hyper-tls")]
-use hyper_tls::HttpsConnector;
-
-#[cfg(feature = "rustls")]
 use hyper_rustls::HttpsConnector;
 
 pub const GET: Method = Method::GET;
